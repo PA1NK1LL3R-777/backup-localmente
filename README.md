@@ -47,5 +47,8 @@ crontab -e
 
 Você vai escolher a quantidade de vezes que o backup será feito, exemplo:
 ```bash
-
+00 14 * * * /usr/local/sbin/backup-completo.sh
 ```
+Nesse exemplo, o backup será feito uma vez por dia, as 2:00/14:00 PM.
+
+Aconselho que pesquise como usar o crontab, assim você saberá como configurar da melhor forma que vá lhe atender.
