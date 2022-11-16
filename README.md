@@ -1,6 +1,6 @@
 # backup-localmente
 
-Faça Backup de seus arquivos para outras repartições principalmente para hds externos ou usando rclone + cloud e montando como uma repartição!
+Faça Backup de seus arquivos para outras repartições principalmente para hds externos/hd de backups ou usando rclone + cloud montando como uma repartição! (Recomendado o rclone + cloud montando como uma repartição)
 
 # Baixe o Script
 
