@@ -9,6 +9,24 @@ wget https://raw.githubusercontent.com/PA1NK1LL3R-777/backup-localmente/main/bac
 ```
 # O que deve ser editado?
 
+Edite o arquivo com vim/vi ou nano
+
+Exemplo:
+```bash
+vi backup-completo.sh
+```
+Ou
+```bash
+nano backup-completo.sh
+```
+Ou
+```bash
+vim backup-completo.sh
+```
+
+Caso você não saiba usar esses editores, pesquise rapidamente como usar no YouTube ou no seu navegador.
+
+
 ```bash
 # Diretorio de backup
 backup_path="/var/www/nextcloud"
@@ -16,6 +34,12 @@ backup_path="/var/www/nextcloud"
 # Diretorio para aonde o backup vai. 
 external_storage="/root/mega/nextcloudbackup"
 ```
+
+Em espefico o "/var/www/nextcloud" quê será a pasta que você quer fazer backup
+
+E
+"/root/mega/nextcloudbackup" que é o diretório para aonde vai o backup.
+
 
 # Dê permissão de execução do Script
 
@@ -25,7 +49,7 @@ chmod u+x backup-completo.sh
 
 # Mova o script para alguma localidade
 
-Exemplo
+Exemplo:
 
 ```bash
 mv -v backup-completo.sh /usr/local/sbin/
