@@ -41,7 +41,7 @@ E
 "/root/mega/nextcloudbackup" que é o diretório para aonde vai o backup.
 
 
-# Dê permissão de execução do Script
+# Dê permissão para execução do Script
 
 ```bash
 chmod u+x backup-completo.sh
