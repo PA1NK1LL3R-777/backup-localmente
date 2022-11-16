@@ -47,7 +47,7 @@ E
 chmod u+x backup-completo.sh
 ```
 
-# Mova o script para alguma localidade
+# Mova o script para algum diretorio
 
 Exemplo:
 
