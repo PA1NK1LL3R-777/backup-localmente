@@ -5,7 +5,7 @@ Faça Backup de seus arquivos para outras repartições principalmente para hd e
 # Baixe o Script
 
 ```bash
-wget https://raw.githubusercontent.com/PA1NK1LL3R-777/backup-localmente/main/backup-completo
+wget https://raw.githubusercontent.com/PA1NK1LL3R-777/backup-localmente/main/backup-completo.sh
 ```
 # O que deve ser editado?
 
