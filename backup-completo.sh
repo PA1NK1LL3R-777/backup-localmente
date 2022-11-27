@@ -4,7 +4,7 @@
 backup_path="/var/www/nextcloud"
 
 # Diretorio para aonde o backup vai. 
-external_storage="/root/mega/nextcloudbackup"
+storage_backup="/root/mega/nextcloudbackup"
 
 # Formato do arquivo 
 date_format=$(date "+%d-%m-%Y")
@@ -14,17 +14,16 @@ final_archive="backup-$date_format.tar.gz"
 log_file="/var/log/daily-backup.log"
 
 #######################
-# Testes
-#######################
-# Checando se o pendrive está plugado na máquina.
-if ! mountpoint -q -- $external_storage; then printf "[$date_format] DEVICE NOT MOUNTED in: $external_storage CHECK IT.\n" >> $log_file exit 1
+# Criando a pasta do backup, caso nao esteja criada
 
+if [ ! -d $storage_backup ]; then
+  mkdir -p $storage_backup
 fi
 
 #######################
 #Inicio do backup.
 #######################
-if tar -czSpf "$external_storage/$final_archive" "$backup_path"; then 
+if tar -czSpf "$storage_backup/$final_archive" "$backup_path"; then 
    printf "[$date_format] BACKUP SUCESS.\n" >> $log_file 
 else
    printf "[$date_format] BACKUP ERR000000R.\n"
@@ -32,4 +31,4 @@ else
 fi
 
 #Exclua os arquivos que tiverem mais de X dias.
-find $external_storage -mtime +10
+find $external_storage -mtime +5
